@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Bootstrap Avançado</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <style>
+
+        .container {
+            margin-bottom: 40px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            
+        }
+        .nav-link {
+            text-align: center;
+        }
+        
+        body {
+            background-color: rgb(231, 231, 245);
+        }
+        .card img {
+            
+            height: 180px;
+        }
+        .row h2 {
+            margin-top: 60px;
+        }
+       
+        header {
+            position:sticky;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            background-color: #ccc;
+        }
+        header h1 {
+            color: #fff;
+        }
+        
+        
+        
+       
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                
+                    <h1>Exercício Bootstrap Avançado - Breno</h1>
+                
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bgs2023">BGS 2023</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+            <section id="inicio">
+                <h2>Início</h2>
+            </section>
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="/imagens/sao_paulo.jpg" />
+                        <div class="carousel-caption">
+                            <h2>São Paulo - SP</h2>
+        
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="/imagens/rio.jpg" />
+                        <div class="carousel-caption">
+                            <h2>Rio de Janeiro - RJ</h2>
+        
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="/imagens/bh.jpg" />
+                        <div class="carousel-caption">
+                            <h2>Belo Horizonte - MG</h2>
+        
+                        </div>
+                    </div>
+                </div>
+            
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <section id="bgs2023">
+                        <h2>BGS 2023</h2>
+                    </section>
+                    <div class="col-sm-12 col-md-6 col-lg-4 g-2">
+                        
+                        <div class="card">
+                          
+                            <img src="/imagens/force_one.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">Force One | Marca Brasileira se prepara para conquistar gamers</h4>
+                               
+                                <p class="card-text">A Force One, marca brasileira de periféricos e assessórios gamer, esteve na BGS 2023 apresentando sua nova linha de produtos. Durante o evento, João Paulo Martins, sócio fundador e CEO da Force One concedeu entrevista para o Canaltech explicando um pouco do novo portfólio e estratégias da empresa para se estabelecer no mercado.</p>
+    
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 g-2">
+                       
+                        <div class="card">
+                            
+                            <img src="/imagens/jbl.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">JBL revela planos para conquistar gamers com linha Quantum</h4>
+                                
+                                <p class="card-text">Durante a BGS 2023, a JBL contou com um estande considerável na feira e levou diversos produtos da linha de fones Quantum. O Canaltech entrevistou o gerente sênior de marketing da Harman na América do Sul, Anderson Oliveira, para entender um pouco mais sobre a expansão da linha de produtos gamer da empresa.</p>
+    
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 g-2">
+                        
+                        <div class="card">
+                            
+                            <img src="/imagens/logitech.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">BGS 2023 | Logitech e a importância de uma presença forte no país</h4>
+                                
+                                <p class="card-text">A Logitech trouxe um estande de respeito na BGS 2023, que representa bem o trabalho que a empresa vem fazendo desde que iniciou sua representação no país 12 anos atrás. Em entrevista ao Canaltech, Ricardo Filó, Diretor de Marketing e Vendas da Logitech Brasil, comentou sobre essa trajetória até aqui, além de alguns planos para o futuro.</p>
+    
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="/lib/javascript.js"></script>
+    
+</body>
+</html>
